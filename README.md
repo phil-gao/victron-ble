@@ -1,5 +1,11 @@
 # victron_ble
 
+> **Fork note (phil-gao):** adds [`duty-cycle/`](duty-cycle/) — a wrapper that
+> duty-cycles the scan so a Victron passive scanner can share one radio with a *held*
+> BLE connection to another device (in my truck, a Dometic CFX3 fridge). Continuous
+> scanning starves the connection; short scan windows fix it. The upstream library is
+> unchanged.
+
 A Python library to parse Instant Readout advertisement data from Victron devices.
 
 Disclaimer: This software is not an officially supported interface by Victron and is provided entirely "as-is"
